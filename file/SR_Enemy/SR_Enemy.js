@@ -1,5 +1,5 @@
 // enemy variable type (prototype)
-Enemies = new SR_Enemy; // G = new hh
+//Enemies = new SR_Enemy; // G = new hh
 function SR_Enemy(){ // original name: hh()
     var EN_arr_size = (100+50*Max_Crowns)*Enemy_Mult;    // required to prevent game from crashing by trying to load too many enemies
     this.EN_index_current = 0;                           // current count                            original name: .index
