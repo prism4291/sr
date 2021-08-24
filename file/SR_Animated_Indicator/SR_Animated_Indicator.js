@@ -1,4 +1,4 @@
-var Indicators = new SR_Animated_Indicator; // original name: ne
+//var Indicators = new SR_Animated_Indicator; // original name: ne
 function SR_Animated_Indicator(){ // original name: rh()
     this.IN_position = Array(Ind_Limit);            // origin position of indicator           original name: .a
     this.IN_direction = Array(Ind_Limit);           // initial x and y direction of indicator original name: .k
