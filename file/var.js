@@ -289,4 +289,41 @@ var Bit_8_Color = new Uint8Array(My_Img_Data.data.buffer);   // original name: g
 //var zg = String.fromCharCode;                                // zg unused
 //var of = setTimeout;                                         // of unused
 var Host_Name = "dan-ball.jp";                               // original name: zh zh=location.hostname;
+window.Init = gameStartup;
+//var Hg = "(C) 2008 ha55ii DAN-BALL.jp";                 // Hg unused
+//var Ve = "Copyright (C) 2008 ha55ii DAN-BALL.jp";       // Ve unused
+//var Bh = "./data/";                                     // Bh unused
+//var Af = "fps";                                         // Af unused
+//var Ch = "canvas";                                      // Ch unused
+//var Dh = "2d";                                          // Dh unused
+var Check_Host2 = 0;                                    // original name: Eh
+var Host_Site = "dan-ball.jp";                          // original name: Fh
+var Game_Canvas = new Int32Array(Win_Width*Win_Height); // original name: C
+var Layer1 = new Int32Array(Win_Height);                // original name: jh
+var Layer2 = new Int32Array(Win_Height);                // original name: kh
+var Layer3 = new Float32Array(Win_Height);              // original name: nh
+var Layer4 = new Float32Array(Win_Height);              // original name: mh
+var Layer5 = new Float32Array(Win_Height);              // original name: ph
+var Layer6 = new Float32Array(Win_Height);              // original name: oh
+var Check_Host1 = 1;
+var Animation_Frame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame; // original name: Gh
+var Animation_Frame_Counter = 0;   // original name: Hh
+var Prev_Game_Ticks_Passed = 0;    // original name: Mh
+var Frame_Counter = 0;             // original name: Kh
+var Frame_Rate = 0;                // original name: zf
+var Time_Period1 = 0;              // original name: Lh
+var Time_Per_Second = 0;           // original name: Bf
+//var Time_Increment1 = 20;          // original name: Th unused
+var Time_Current = Date.now();     // original name: Ih
+var Time_Prev = Time_Current;      // original name: Jh
+var Time_Future = Time_Current+20; // original name: Uh
+var Time_Min = Time_Current;       // original name: Vh
+var Time_Desert_Haze = 0;          // original name: Ig
+var Tile_Counter1 = 0;
+var PvP_Text_Spaces = [[0,2,0,0,1,0,0,2,2,1,1,1,2,1,2,0,0,0,0,0,0,0,0,0,0,0,2,2,0,1,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,1,0,2,0,0,0,0,0,0,0,0,2,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,3,1,0],
+                       [0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]];
+var PVE_Text_Spaces = [[0,1,1,0,0,0,0,2,1,2,0,0,2,1,2,0,0,0,0,0,0,0,0,0,0,0,2,2,0,1,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,2,1,0,2,0,0,0,0,0,0,0,0,2,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,1,0],
+                       [0,1,0,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]];
+var Large_Text = new SR_Text; // D = new Zh
+var Small_Text = new SR_Text; // hf = new Zh
 
