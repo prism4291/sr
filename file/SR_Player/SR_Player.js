@@ -1,3 +1,4 @@
+var Players = new SR_Player; // v = new Pg;
 function SR_Player(){ // original name: Pg()
     this.PL_joint = Array((Stickmen_Slots<<1));                      // all the joints in the stickman's body             original name: .a
     this.PL_joint_destination = Array((Stickmen_Slots<<1));          // destination of the joint for the next frame       original name: .c
