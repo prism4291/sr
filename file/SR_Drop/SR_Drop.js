@@ -1,5 +1,5 @@
 // item drops
-var Drops = new SR_Drop;
+//var Drops = new SR_Drop;
 function SR_Drop(){ // original name: sh()
     this.DP_position = Array(Drop_Limit);         // original name: .a
     this.DP_velocity = Array(Drop_Limit);         // original name: .k
