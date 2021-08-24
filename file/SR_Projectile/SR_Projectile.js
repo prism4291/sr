@@ -1,4 +1,4 @@
-var Projectiles = new SR_Projectile;
+//var Projectiles = new SR_Projectile;
 function SR_Projectile(){ // original name: ih()
     this.PJ_index = 0;                                        // original name: .index
     this.PJ_attacker = new Int32Array(Proj_Limit);            // original name: .F
