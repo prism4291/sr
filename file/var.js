@@ -238,4 +238,20 @@ var Check_Var_Comp2_Inv = 0;
 var Check_Var_STR_Aura = 0;
 var Check_Var_DEX_Aura = 0;
 var Check_Var_Stage_Status = 0;
+// stage number    [0,1,2,3,4 ,5 ,6 ,7 ,8 ,9 ,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 ,27 ,28 ,29 ,30 ,31 ,32 ,33 ,34 ,35 ,36 ,37 ,38 ,39 ,40 ,41 ,42 ,43 ,44 ,45 ,46 ,47 ,48 ,49 ,50 ,51 ,52 ,53 ,54 ,55 ,56 ,57 ,58 ,59 ,60 ,61 ,62 ,63 ,64 ,65 ,66 ,67 ,68 ,69 ,70 ,71 ,72 ,73 ,74 ,75 ,76 ,77 ,78 ,79 ,80 ,81 ,82 ,83 ,84 ,85 ,86 ,87 ,88 ,89]; // added this comment for easier reference
+var Book_Indexer = [0,0,5,9,14,19,23,27,31,35,39,41,45,49,53,57,61,65,70,75,80,80,85,90,94,98,102,106,110,114,116,120,124,128,130,134,138,142,146,150,154,158,162,164,168,172,176,180,180,185,190,195,199,203,207,211,215,219,223,227,231,235,239,243,245,249,253,257,260,264,268,268,270,274,278,282,286,290,290,294,298,302,306,310,315,320,324,328,332,338,339]; // original name Pe[]
+var EN_Lvl = 0;      // enemy level         original name: Qe
+var EN_Species = 1;  // enemy species       original name: bh
+var EN_Size = 3;     // enemy size          original name: ch
+var EN_LP = 6;       // enemy LP            original name: lg
+var Ph_Resist = 35;  // physical resistance original name: pg
+var Fi_Resist = 36;  // fire resistance     original name: qg
+var Ic_Resist = 37;  // ice resistance      original name: rg
+var Th_Resist = 38;  // thunder resistance  original name: sg
+var Po_Resist = 39;  // poison resistance   original name: tg
+var Fr_Resist = 40;  // freeze resistance   original name: ug
+var En_2nd_Att = 60; // 2nd attack switch   original name: Re
+var EN_EXP = 61;     // enemy experience    original name: ng
+var En_Gold = 62;    // enemy gold dropped  original name: mg
+var En_Drop1 = 63;   // enemy drop #1       original name: og
 
