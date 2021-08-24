@@ -281,4 +281,12 @@ var Ceiling = 11;            // original name: Pf
 var Ceiling_Left = 12;       // original name: Qf
 var Ceiling_Middle = 13;     // original name: Rf
 var Ceiling_Left = 14;       // original name: Sf
+var cv = document.getElementById("cv");                      // original name: We
+var ctx = cv.getContext("2d");                               // original name: wh
+var My_Img_Data = ctx.createImageData(Win_Width,Win_Height); // original name: xh
+var Bit_8_Color = new Uint8Array(My_Img_Data.data.buffer);   // original name: gf
+//var yh = window.console;                                     // yh unused
+//var zg = String.fromCharCode;                                // zg unused
+//var of = setTimeout;                                         // of unused
+var Host_Name = "dan-ball.jp";                               // original name: zh zh=location.hostname;
 
