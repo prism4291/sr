@@ -1,4 +1,4 @@
-var DPSM_Calculator = new SR_calculator;
+//var DPSM_Calculator = new SR_calculator;
 function SR_calculator(){ // new function
     this.CL_dmg_session = Array((Stickmen_Slots<<1)); // damage done during current session
     this.CL_DPS_session = Array((Stickmen_Slots<<1)); // DPS done during current session
