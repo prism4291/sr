@@ -1,4 +1,4 @@
-var Terrain = new SR_Terrain; // I = new th
+//var Terrain = new SR_Terrain; // I = new th
 function SR_Terrain(){ // original name: th()
     this.TR_width = Win_Width>>3;                                            // original name: .i
     this.TR_height = Win_Height>>3;                                          // original name: .s
