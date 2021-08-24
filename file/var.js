@@ -326,4 +326,46 @@ var PVE_Text_Spaces = [[0,1,1,0,0,0,0,2,1,2,0,0,2,1,2,0,0,0,0,0,0,0,0,0,0,0,2,2,
                        [0,1,0,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]];
 var Large_Text = new SR_Text; // D = new Zh
 var Small_Text = new SR_Text; // hf = new Zh
-
+var Display_Mode = 0; // original name: Xf
+var Display_Mode2 = 0; // original name: dg
+var Clicked = false;              // true on the first frame that left mouse button is pressed   original name: Ef
+var Released = false;             // true on the first frame that left mouse button is released  original name: xg
+var Left_Click_Was_Down = false;  // true while left mouse button is pressed down                original name: Ug
+var Left_Click_Is_Down = false;   // true while left mouse button is pressed down                original name: Nh
+var Right_Click_Released = false; // true on the first frame that right mouse button is released original name: Oh
+var Right_Click_Was_Down = false; // true while right mouse button is pressed down               original name: Ph
+var Right_Click_Is_Down = false;  // also true while right mouse button is pressed down          original name: Qh
+var Left_Click_Is_Up = false;     // true while left mouse button is released                    original name: Lg
+var Sett_Change = 0;              //                                                             original name: $f
+var Mouse_Xpos = 0;               // horizontal position of cursor                               original name: cg
+var Mouse_Ypos = 0;               // vertical position of cursor                                 original name: fg
+var Mouse_Xpos2 = 0;              //                                                             original name: Rh
+var Mouse_Ypos2 = 0;              //                                                             original name: Sh
+var Is_Key_Pressed1 = Array(256); // original name: Ze
+var Arr256_2 = Array(256); // original name: $e
+var Is_Key_Held = Array(256); // original name: af
+var Arr256_4 = Array(256); // original name: bf
+var Arr256_5 = Array(256); // original name: cf
+var Mouse_In_Window = false; // original name: bi
+//var wg = "";                 // unused
+//var yg = new SR_Image;       // unused
+//var Fg = Array(100);         // unused
+var Global_Eg = 0;           // original name: Eg
+//var di = "POST";             // unused
+//var Ag = "&b=";              // unused
+//var Bg = "&c=";              // unused
+//var Cg = "&d=";              // unused
+//var Gg = "&e=";              // unused
+//var Wh = "ERROR";                             // unused
+//var ei = "=";                                 // unused
+var Line_Return = String.fromCharCode(10);    // original name: fi
+//var gi = "Content-Type";                      // unused
+//var hi = "application/x-www-form-urlencoded"; // unused
+var Rand_Arr_Df = new Float32Array(1024); // original name: df
+var Rand_EF = 0; // original name: ef
+var Rand_FF = 0; // original name: ff
+var Xe_arr = Array(513);   // original name: Xe
+var Pi = 3.1415927;    // original name: Ye
+var TwoPi = 6.2831855; // original name: Wg
+var Beaten2 = 2;
+var Randomizer_Mode = 0;
