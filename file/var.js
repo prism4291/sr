@@ -260,6 +260,7 @@ var En_Drop1 = 63;   // enemy drop #1       original name: og
 var Hitboxvar1 = [20,20,20,20,18,8 ,20,20,8 ,20,16,16,20,20,16,16,16,14,8];   // original name: fh
 var Hitboxvar2 = [20,20,20,20,24,40,20,20,20,20,16,24,20,20,16,16,16,14,40];  // original name: gh
 var Text_Spacing = [1,0.2,1,0.2,2,0.5,1,0.1,1,0.1,1,1,0.1,0.1,1,1,0.2,1,0.5]; // original name: ah
+Enemies = new SR_Enemy; // G = new hh
 var Stage_Count = 90; // original name: ze
 var Stage_Status = [3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; // original name: Ae
 var Unlocked = 1;     // original name: Ce
