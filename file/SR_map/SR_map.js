@@ -1,5 +1,5 @@
 // map size
-var WorldMap = new SR_map; // qe = new uh
+//var WorldMap = new SR_map; // qe = new uh
 function SR_map(){ // original name: uh()
     this.MAP_width = 78;                             // total width (in tiles) of world map              original name: .i
     this.MAP_height = 16;                            // total height (in tiles) of world map             original name: .s
