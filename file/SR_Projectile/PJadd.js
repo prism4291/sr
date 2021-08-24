@@ -1,0 +1,57 @@
+// tracks projectiles/hits original name: aa.add
+SR_Projectile.prototype.PJadd = function(attacker,x_pos,y_pos,x_spd,y_spd,orient,img,color,transp,width,height,box_width,box_height,appear_delay,solid_delay,lifespan,disp_eff,grav,accel,pierce,bounce,homing,is_critical,knockback,splash,AT_Min,AT_Max,res_type,res_type_param,res_mode,res_orient,res_img,res_color,res_transp,res_width,res_height,res_box_width,res_box_height,res_appear_delay,res_solid_delay,res_lifespan,res_fade_time,res_grav,res_accel,res_pierce,res_bounce,res_splash,res_ATmin,res_ATmax,res_bullet,base_res_type,base_res_type_param){
+    if (this.PJ_index!=Proj_Limit){
+        this.PJ_attacker[this.PJ_index] = attacker;
+        assignVector2D(this.PJ_position[this.PJ_index],x_pos,y_pos);
+        assignVector2D(this.PJ_velocity[this.PJ_index],x_spd,y_spd);
+        this.PJ_is_transparent[this.PJ_index] = 0;
+        this.PJ_orient[this.PJ_index] = orient;
+        this.PJ_img[this.PJ_index] = img;
+        this.PJ_color[this.PJ_index] = color;
+        this.PJ_transp[this.PJ_index] = transp;
+        this.PJ_width[this.PJ_index] = width;
+        this.PJ_height[this.PJ_index] = height;
+        this.PJ_box_width[this.PJ_index] = box_width;
+        this.PJ_box_height[this.PJ_index] = box_height;
+        this.PJ_appear_delay[this.PJ_index] = floor(random(appear_delay));
+        this.PJ_solid_delay[this.PJ_index] = solid_delay;
+        this.PJ_lifespan[this.PJ_index] = lifespan;
+        this.PJ_disp_eff[this.PJ_index] = disp_eff;
+        this.PJ_gravity[this.PJ_index] = grav;
+        this.PJ_accel[this.PJ_index] = accel;
+        this.PJ_pierce[this.PJ_index] = pierce;
+        this.PJ_bounce[this.PJ_index] = bounce;
+        this.PJ_homing[this.PJ_index] = homing;
+        this.PJ_is_critical[this.PJ_index] = is_critical;
+        this.PJ_knockback[this.PJ_index] = knockback;
+        this.PJ_splash[this.PJ_index] = splash;
+        this.PJ_AT_min[this.PJ_index] = AT_Min;
+        this.PJ_AT_max[this.PJ_index] = AT_Max;
+        this.PJ_res_type[this.PJ_index] = res_type;
+        this.PJ_res_type_param[this.PJ_index] = res_type_param;
+        this.PJ_res_mode[this.PJ_index] = res_mode;
+        this.PJ_res_orient[this.PJ_index] = res_orient;
+        this.PJ_res_img[this.PJ_index] = res_img;
+        this.PJ_res_color[this.PJ_index] = res_color;
+        this.PJ_res_transp[this.PJ_index] = res_transp;
+        this.PJ_res_width[this.PJ_index] = res_width;
+        this.PJ_res_height[this.PJ_index] = res_height;
+        this.PJ_res_box_width[this.PJ_index] = res_box_width;
+        this.PJ_res_box_height[this.PJ_index] = res_box_height;
+        this.PJ_res_appear_delay[this.PJ_index] = res_appear_delay;
+        this.PJ_res_solid_delay[this.PJ_index] = res_solid_delay;
+        this.PJ_res_lifespan[this.PJ_index] = res_lifespan;
+        this.PJ_res_fade_tick[this.PJ_index] = res_fade_time;
+        this.PJ_res_grav[this.PJ_index] = res_grav;
+        this.PJ_res_accel[this.PJ_index] = res_accel;
+        this.PJ_res_pierce[this.PJ_index] = res_pierce;
+        this.PJ_res_bounce[this.PJ_index] = res_bounce;
+        this.PJ_res_splash[this.PJ_index] = res_splash;
+        this.PJ_res_AT_min[this.PJ_index] = res_ATmin;
+        this.PJ_res_AT_max[this.PJ_index] = res_ATmax;
+        this.PJ_res_bullet[this.PJ_index] = res_bullet;
+        this.PJ_res_base_type[this.PJ_index] = base_res_type;
+        this.PJ_res_base_type_param[this.PJ_index] = base_res_type_param;
+        this.PJ_index++;
+    }
+};
