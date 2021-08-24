@@ -254,4 +254,7 @@ var En_2nd_Att = 60; // 2nd attack switch   original name: Re
 var EN_EXP = 61;     // enemy experience    original name: ng
 var En_Gold = 62;    // enemy gold dropped  original name: mg
 var En_Drop1 = 63;   // enemy drop #1       original name: og
+var Hitboxvar1 = [20,20,20,20,18,8 ,20,20,8 ,20,16,16,20,20,16,16,16,14,8];   // original name: fh
+var Hitboxvar2 = [20,20,20,20,24,40,20,20,20,20,16,24,20,20,16,16,16,14,40];  // original name: gh
+var Text_Spacing = [1,0.2,1,0.2,2,0.5,1,0.1,1,0.1,1,1,0.1,0.1,1,1,0.2,1,0.5]; // original name: ah
 
