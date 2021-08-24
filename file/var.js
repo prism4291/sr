@@ -257,4 +257,28 @@ var En_Drop1 = 63;   // enemy drop #1       original name: og
 var Hitboxvar1 = [20,20,20,20,18,8 ,20,20,8 ,20,16,16,20,20,16,16,16,14,8];   // original name: fh
 var Hitboxvar2 = [20,20,20,20,24,40,20,20,20,20,16,24,20,20,16,16,16,14,40];  // original name: gh
 var Text_Spacing = [1,0.2,1,0.2,2,0.5,1,0.1,1,0.1,1,1,0.1,0.1,1,1,0.2,1,0.5]; // original name: ah
+var Stage_Count = 90; // original name: ze
+var Stage_Status = [3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; // original name: Ae
+var Unlocked = 1;     // original name: Ce
+var Beaten = 2;       // original name: Be
+var Booked = 4;       // original name: kg
+var Stage_In_Book = [1,2,3,4,5,6,7,8,11,12,13,9,10,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,71,72,73,74,75,76,78,79,80,81,82,83,84,85,86,87,88,89,0 ,0 ,0 ,0,0]; // stages in book original name: jg[]
+// stage number [0,1,2,3,4,5,6,7,8 ,9 ,10,1,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,8,9]; // added this comment for easier reference
+var Shop_Reqs = [1,2,3,4,5,5,6,6,7 ,7 ,9 ,5,6 ,7 ,1 ,8 ,8 ,9 ,9 ,9 ,1 ,10,11,11,12,12,13,13,14,14,12,13,14,1 ,15,15,15,16,16,1 ,17,17,18,17,18,18,18,1 ,19,19,19,20,20,20,21,23,20,21,21,22,22,23,22,23,24,24,24,24,24,25,1 ,1 ,24,25,26,26,26,1 ,27,27,28,28,1 ,29,30,31,32,33,1,1]; // stage that must be beaten in order to unlock the current weapon in shop original name: gg[]
+var Stage_Names = "Town;Opening Street;Grassland 1;Grassland 2;Grassland 3;Grassland 4;Grassland 5;Grassland 6;Grassland 7;Castle Gate;Castle;Hill Country 1;Hill Country 2;Hill Country 3;Lake;Forest 1;Forest 2;Cavern 1;Cavern 2;Cavern 3;Village;Seaside 1;Seaside 2;Seaside 3;Seaside 4;Submarine 1;Submarine 2;Submarine 3;Submarine 4;Submarine Shrine;Mist Grove 1;Mist Grove 2;Mist Grove 3;???;Desert 1;Desert 2;Desert 3;Desert 4;Desert 5;Oasis;Desert 6;Desert 7;Pyramid;Desert 8;Beach 1;Beach 2;Beach 3;Resort;Cavern 4;Cavern 5;Cavern 6;Snowfield 1;Snowfield 2;Mountain 1;Mountain 2;Mountaintop;Snowfield 3;Snowfield 4;Snowfield 5;Snowfield 6;Snowfield 7;Snowfield 8;Frozen Lake;Ice Castle;Snowfield 9;Beach 4;Forest 3;Forest 4;Forest 5;Forest 6;Forget Tree;!!!;Hell 1;Hell 2;Hell 3;Hell 4;Hell 5;Island;Hell 6;Inferno 1;Inferno 2;Inferno 3;Blood Lake;Cavern 7;Cavern 8;Hell 7;Hell 8;Hell Gate;Hell Castle;Volcano".split(";"); // original name: Uf
+// spawn positions
+var Ground = 1;              // original name: O
+var Ground_Left = 2;         // original name: P
+var Ground_Middle = 3;       // original name: Q
+var Ground_Right = 4;        // original name: R
+var Air_Water = 5;           // original name: S
+var Water = 6;               // original name: T
+var Ground_Left_Clump = 7;   // original name: Mf
+var Ground_Middle_Clump = 8; // original name: Nf
+var Ground_Right_Clump = 9;  // original name: Of
+var Air = 10;                // original name: Lf
+var Ceiling = 11;            // original name: Pf
+var Ceiling_Left = 12;       // original name: Qf
+var Ceiling_Middle = 13;     // original name: Rf
+var Ceiling_Left = 14;       // original name: Sf
 
