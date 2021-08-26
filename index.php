@@ -1,1 +1,1 @@
-<?php include_once("Vanilla Translation Mod.html"); ?>
+<?php include_once("index.html"); ?>
