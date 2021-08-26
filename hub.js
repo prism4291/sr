@@ -2,7 +2,7 @@
 
 document.getElementById('cv').addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
 //document.addEventListener("touchmove", preventScroll, false);
-
+document.getElementById("cv").getContext("2d").translate(100,50);
 
 
 document.write('<script src="file/SR_Player/SR_Player.js"></script>');
