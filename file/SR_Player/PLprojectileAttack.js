@@ -321,6 +321,9 @@ SR_Player.prototype.PLprojectileAttack = function(source,AT_focus_Xpos,AT_focus_
         }
         if (checkEff(Stickmen_Slots+source,Card_Reflct) && getEff(Stickmen_Slots+source,Eff1)>random(100))
             AT_pj_bounce = 2;
+        /*add*/
+        AT_pj_bounce = 2;
+        //*/
     }
 
     AT_attacker = source;
