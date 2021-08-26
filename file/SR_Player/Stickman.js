@@ -28,15 +28,15 @@ SR_Player.prototype.Stickman_pl = function(current_char){ // (new prototype)
     pullJoints(this.PL_joint[current_char][7],this.PL_joint[current_char][8] ,60,0.001,0.001); // left knee to right knee
     //*/
   //pullJoints(this.PL_joint[current_char][7],this.PL_joint[current_char][8] , 6,4  ,0.1); // makes them fly (ish)
-    pullJoints(this.PL_joint[current_char][0],this.PL_joint[current_char][1] ,3.6,0.5,0.5); // top of head to neck
-    pullJoints(this.PL_joint[current_char][1],this.PL_joint[current_char][2] ,3.6,0.5,0.5); // neck to crotch
-    pullJoints(this.PL_joint[current_char][1],this.PL_joint[current_char][3] ,4.8,0.5,0.5); // neck to left elbow
-    pullJoints(this.PL_joint[current_char][1],this.PL_joint[current_char][4] ,4.8,0.5,0.5); // neck to right elbow
-    pullJoints(this.PL_joint[current_char][3],this.PL_joint[current_char][5] ,4.8,0.5,0.5); // left elbow to left hand
-    pullJoints(this.PL_joint[current_char][4],this.PL_joint[current_char][6] ,4.8,0.5,0.5); // right elbow to right hand
-    pullJoints(this.PL_joint[current_char][2],this.PL_joint[current_char][7] ,6.0,0.5,0.5); // crotch to left knee
-    pullJoints(this.PL_joint[current_char][2],this.PL_joint[current_char][8] ,6.0,0.5,0.5); // crotch to right knee
-    pullJoints(this.PL_joint[current_char][7],this.PL_joint[current_char][9] ,7.2,0.5,0.5); // left knee to left foot
-    pullJoints(this.PL_joint[current_char][8],this.PL_joint[current_char][10],7.2,0.5,0.5); // right knee to right foot
+    pullJoints(this.PL_joint[current_char][0],this.PL_joint[current_char][1] ,0.1,0.5,0.5); // top of head to neck
+    pullJoints(this.PL_joint[current_char][1],this.PL_joint[current_char][2] ,0.1,0.5,0.5); // neck to crotch
+    pullJoints(this.PL_joint[current_char][1],this.PL_joint[current_char][3] ,0.1,0.5,0.5); // neck to left elbow
+    pullJoints(this.PL_joint[current_char][1],this.PL_joint[current_char][4] ,0.1,0.5,0.5); // neck to right elbow
+    pullJoints(this.PL_joint[current_char][3],this.PL_joint[current_char][5] ,0.1,0.5,0.5); // left elbow to left hand
+    pullJoints(this.PL_joint[current_char][4],this.PL_joint[current_char][6] ,0.1,0.5,0.5); // right elbow to right hand
+    pullJoints(this.PL_joint[current_char][2],this.PL_joint[current_char][7] ,0.1,0.5,0.5); // crotch to left knee
+    pullJoints(this.PL_joint[current_char][2],this.PL_joint[current_char][8] ,0.1,0.5,0.5); // crotch to right knee
+    pullJoints(this.PL_joint[current_char][7],this.PL_joint[current_char][9] ,0.1,0.5,0.5); // left knee to left foot
+    pullJoints(this.PL_joint[current_char][8],this.PL_joint[current_char][10],0.1,0.5,0.5); // right knee to right foot
     pullJoints(this.PL_joint[current_char][7],this.PL_joint[current_char][8] ,6  ,0.1,0.1); // left knee to right knee
 };
