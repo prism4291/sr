@@ -1,1 +1,2 @@
-document.write("<script src="Vanilla Translation Mod.js"></script>")
+document.write("<script src="Vanilla Translation Mod.js"></script>");
+
