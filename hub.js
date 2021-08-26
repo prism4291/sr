@@ -4,12 +4,7 @@ document.getElementById('cv').addEventListener('touchmove', function(e) {e.preve
 //document.addEventListener("touchmove", preventScroll, false);
 
 
-document.write('<script src="file/Stage_Spawns.js"></script>');
-document.write('<script src="file/Shop_Items.js"></script>');
-document.write('<script src="file/Dot_Locations.js"></script>');
-document.write('<script src="file/comment.js"></script>');
-document.write('<script src="file/Item_Catalogue.js"></script>');
-document.write('<script src="file/EN_Info.js"></script>');
+
 document.write('<script src="file/SR_Player/SR_Player.js"></script>');
 document.write('<script src="file/SR_Player/PLtakeDamage.js"></script>');
 document.write('<script src="file/SR_Player/Angel.js"></script>');
@@ -194,5 +189,11 @@ document.write('<script src="file/Vector2D/Vsub.js"></script>');
 document.write('<script src="file/Vector2D/Vset.js"></script>');
 
 document.write('<script src="file/var.js"></script>');
+document.write('<script src="file/Stage_Spawns.js"></script>');
+document.write('<script src="file/Shop_Items.js"></script>');
+document.write('<script src="file/Dot_Locations.js"></script>');
+document.write('<script src="file/comment.js"></script>');
+document.write('<script src="file/Item_Catalogue.js"></script>');
+document.write('<script src="file/EN_Info.js"></script>');
 //document.write('<script type="text/javascript">Init("1",1,0);</script>');
 document.write('<script src="file/html/Init.js"></script>');
