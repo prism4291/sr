@@ -2,7 +2,7 @@
 
 document.getElementById('cv').addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
 //document.addEventListener("touchmove", preventScroll, false);
-document.getElementById("cv").getContext("2d").translate(100,50);
+
 
 
 document.write('<script src="file/SR_Player/SR_Player.js"></script>');
@@ -188,6 +188,7 @@ document.write('<script src="file/Vector2D/Vdistance.js"></script>');
 document.write('<script src="file/Vector2D/Vsub.js"></script>');
 document.write('<script src="file/Vector2D/Vset.js"></script>');
 
+document.getElementById("cv").getContext("2d").translate(100,50);
 document.write('<script src="file/var.js"></script>');
 document.write('<script src="file/Stage_Spawns.js"></script>');
 document.write('<script src="file/Shop_Items.js"></script>');
