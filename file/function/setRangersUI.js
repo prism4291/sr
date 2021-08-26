@@ -208,7 +208,7 @@ function setRangersUI(){
         }
         /*add*/
         Agi_Min[s] = 1;
-        Agi_Min[s] = 1;
+        Agi_Max[s] = 1;
         //*/
         AT_Min[s] += floor(AT_Min[s]*STR_Aura[s]/100); // Priest STR aura
         AT_Max[s] += floor(AT_Max[s]*STR_Aura[s]/100);
