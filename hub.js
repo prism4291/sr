@@ -188,9 +188,9 @@ document.write('<script src="file/Vector2D/Vdistance.js"></script>');
 document.write('<script src="file/Vector2D/Vsub.js"></script>');
 document.write('<script src="file/Vector2D/Vset.js"></script>');
 
-document.getElementById("cv").style.position = "absolute";
-document.getElementById("cv").style.left = "100px";
-document.getElementById("cv").style.top = "50px";
+//document.getElementById("cv").style.position = "absolute";
+//document.getElementById("cv").style.left = "100px";
+//document.getElementById("cv").style.top = "100px";
 
 
 document.write('<script src="file/var.js"></script>');
