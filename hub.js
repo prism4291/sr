@@ -194,4 +194,4 @@ document.write('<script src="file/Vector2D/Vdistance.js"></script>');
 document.write('<script src="file/Vector2D/Vsub.js"></script>');
 document.write('<script src="file/Vector2D/Vset.js"></script>');
 
-document.write('<script type="text/javascript">Init("1",1,0);</script>');
+//document.write('<script type="text/javascript">Init("1",1,0);</script>');
