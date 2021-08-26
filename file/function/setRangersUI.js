@@ -206,7 +206,7 @@ function setRangersUI(){
             Agi_Min[s] -= floor(Agi_Min[s]*agi_reduction/100);
             Agi_Max[s] -= floor(Agi_Max[s]*agi_reduction/100);
         }
-        /*add*#/
+        /*add*/
         Agi_Min[s] = 1;
         Agi_Min[s] = 1;
         //*/
