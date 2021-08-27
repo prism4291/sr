@@ -3,10 +3,10 @@ function scroll_control(e){
     e.preventDefault();
 }
 function scroll_off(){
-    document.getElementById('cv').addEventListener('touchmove', scroll_control, {passive: false});
+    document.addEventListener('touchmove', scroll_control, {passive: false});
 }
 function scroll_on(){
-    document.getElementById('cv').removeEventListener('touchmove', scroll_control, {passive: false});
+    document.removeEventListener('touchmove', scroll_control, {passive: false});
 }
 //document.addEventListener("touchmove", preventScroll, false);
 
