@@ -1,6 +1,13 @@
 //document.write('<script src="Vanilla Translation Mod.js"></script>');
-
-document.getElementById('cv').addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
+function scroll_control(e){
+    e.preventDefault();
+}
+function scroll_off(){
+    document.getElementById('cv').addEventListener('touchmove', scroll_control, {passive: false});
+}
+function scroll_on(){
+    document.getElementById('cv').removeEventListener('touchmove', scroll_control, {passive: false});
+}
 //document.addEventListener("touchmove", preventScroll, false);
 
 
@@ -190,7 +197,7 @@ document.write('<script src="file/Vector2D/Vset.js"></script>');
 
 //document.getElementById("cv").style.position = "absolute";
 //document.getElementById("cv").style.left = "100px";
-//document.getElementById("cv").style.top = "100px";
+//document.getElementById("cv").style.top = "150px";
 
 
 document.write('<script src="file/var.js"></script>');
