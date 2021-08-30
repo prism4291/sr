@@ -95,8 +95,8 @@ SR_Projectile.prototype.PJmain = function(){ // aa.move
                             case 1: // immobile (Poison Arrow like)
                                 //assignVector2D(trajectory,0,0);
                                 /*add*/
-                                trajectory.x=0.01;
-                                trajectory.y=0.01;
+                                trajectory.x=0.1;
+                                trajectory.y=0;
                                 //*/
                                 break;
                             case 3: // random spread (Flame Arrow like)
