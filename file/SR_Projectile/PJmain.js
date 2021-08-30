@@ -134,6 +134,7 @@ SR_Projectile.prototype.PJmain = function(){ // aa.move
                                 tragectory.x = 1;
                                 tragectory.y = 0;
                                 break;
+                            //*/
                         }
                         Projectiles.PJadd(this.PJ_attacker[curr_proj],this.PJ_position[curr_proj].x,this.PJ_position[curr_proj].y,trajectory.x,trajectory.y,this.PJ_res_orient[curr_proj],this.PJ_res_img[curr_proj],this.PJ_res_color[curr_proj],this.PJ_res_transp[curr_proj],this.PJ_res_width[curr_proj],this.PJ_res_height[curr_proj],this.PJ_res_box_width[curr_proj],this.PJ_res_box_height[curr_proj],this.PJ_res_appear_delay[curr_proj],this.PJ_res_solid_delay[curr_proj],this.PJ_res_lifespan[curr_proj],this.PJ_res_fade_tick[curr_proj],this.PJ_res_grav[curr_proj],this.PJ_res_accel[curr_proj],this.PJ_res_pierce[curr_proj],this.PJ_res_bounce[curr_proj],this.PJ_is_critical[curr_proj],0,0,this.PJ_res_splash[curr_proj],this.PJ_res_AT_min[curr_proj],this.PJ_res_AT_max[curr_proj],this.PJ_res_base_type[curr_proj],this.PJ_res_base_type_param[curr_proj],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
                     }
