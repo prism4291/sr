@@ -131,8 +131,8 @@ SR_Projectile.prototype.PJmain = function(){ // aa.move
                                 break;
                             /*add*/
                             case 10:
-                                tragectory.x = 1;
-                                tragectory.y = 0;
+                                tragectory.x = 0.1;
+                                tragectory.y = -0.5;
                                 break;
                             //*/
                         }
