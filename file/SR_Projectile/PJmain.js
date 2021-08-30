@@ -87,14 +87,15 @@ SR_Projectile.prototype.PJmain = function(){ // aa.move
                 this.PJ_lifespan[curr_proj] = 0;
 
                 // residue modes (1-9 not 2)
-                if (this.PJ_res_mode[curr_proj]==1 || this.PJ_res_mode[curr_proj]==3 || this.PJ_res_mode[curr_proj]==4 || this.PJ_res_mode[curr_proj]==5 || this.PJ_res_mode[curr_proj]==6 || this.PJ_res_mode[curr_proj]==7 || this.PJ_res_mode[curr_proj]==8 || this.PJ_res_mode[curr_proj]==9){
+                if (this.PJ_res_mode[curr_proj]==1 || this.PJ_res_mode[curr_proj]>=3){
+                //if (this.PJ_res_mode[curr_proj]==1 || this.PJ_res_mode[curr_proj]==3 || this.PJ_res_mode[curr_proj]==4 || this.PJ_res_mode[curr_proj]==5 || this.PJ_res_mode[curr_proj]==6 || this.PJ_res_mode[curr_proj]==7 || this.PJ_res_mode[curr_proj]==8 || this.PJ_res_mode[curr_proj]==9){
                     g = floor(random(512));
 
                     for (var j=0; j<this.PJ_res_bullet[curr_proj]; j++){
                         switch (this.PJ_res_mode[curr_proj]){
                             case 1: // immobile (Poison Arrow like)
-                                //assignVector2D(trajectory,0,0);
-                                /*add*/
+                                assignVector2D(trajectory,0,0);
+                                /*add*#/
                                 trajectory.x=0.6;
                                 trajectory.y=-0.1;
                                 //*/
@@ -133,9 +134,9 @@ SR_Projectile.prototype.PJmain = function(){ // aa.move
                                 trajectory.y = this.PJ_velocity[curr_proj].y;
                                 normalize(trajectory);
                                 break;
-                            /*add*#/
+                            /*add*/
                             case 10:
-                                assignVector2D(trajectory,0,0);
+                                assignVector2D(trajectory,1,0);
                                 break;
                             //*/
                         }
