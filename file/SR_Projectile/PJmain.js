@@ -93,7 +93,11 @@ SR_Projectile.prototype.PJmain = function(){ // aa.move
                     for (var j=0; j<this.PJ_res_bullet[curr_proj]; j++){
                         switch (this.PJ_res_mode[curr_proj]){
                             case 1: // immobile (Poison Arrow like)
-                                assignVector2D(trajectory,0,0);
+                                //assignVector2D(trajectory,0,0);
+                                /*add*/
+                                trajectory.x=0.01;
+                                trajectory.y=0.01;
+                                //*/
                                 break;
                             case 3: // random spread (Flame Arrow like)
                                 g = floor(random(512));
@@ -129,7 +133,7 @@ SR_Projectile.prototype.PJmain = function(){ // aa.move
                                 trajectory.y = this.PJ_velocity[curr_proj].y;
                                 normalize(trajectory);
                                 break;
-                            /*add*/
+                            /*add*#/
                             case 10:
                                 assignVector2D(trajectory,0,0);
                                 break;
