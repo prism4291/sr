@@ -24,8 +24,8 @@ function SR_Player(){ // original name: Pg()
     this.PL_ring_distance_to_travel = Array((Stickmen_Slots<<1));    // distance between ring and its next destination    original name: .aa
     this.PL_ring_ticks_until_active = Array((Stickmen_Slots<<1));    // number of frames until ring hitbox will be active original name: .ba
     for (var s=0; s<Stickmen_Slots<<1; s++){
-        this.PL_joint[s] = Array(21);
-        this.PL_joint_destination[s] = Array(21);
+        this.PL_joint[s] = Array(61);
+        this.PL_joint_destination[s] = Array(61);
         this.PL_ring_thrown_status[s] = new Int32Array(6);
         this.PL_ring_distance_to_travel[s] = new Int32Array(6);
         this.PL_ring_ticks_until_active[s] = new Int32Array(6);
