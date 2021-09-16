@@ -64,6 +64,22 @@ SR_Player.prototype.PLrenderPlayer = function(){ // Pg.prototype.b
             drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][14].x,this.PL_joint[s][14].y,wing_color);
             drawLine(this.PL_joint[s][13].x,this.PL_joint[s][13].y,this.PL_joint[s][14].x,this.PL_joint[s][14].y,wing_color);
         }
+        if (this.PL_class_ID[s]==0){ // if stickman is a stickman
+            wing_color = (weap_color&0xFF6666)>>17<<16|(weap_color&0x00FFFF)>>9<<8|(weap_color&0x0000FF)>>1;
+            drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][11].x,this.PL_joint[s][11].y,wing_color);
+            drawLine(this.PL_joint[s][11].x,this.PL_joint[s][11].y,this.PL_joint[s][12].x,this.PL_joint[s][12].y,wing_color);
+            drawLine(this.PL_joint[s][13].x,this.PL_joint[s][13].y,this.PL_joint[s][12].x,this.PL_joint[s][12].y,wing_color);
+            drawLine(this.PL_joint[s][13].x,this.PL_joint[s][13].y,this.PL_joint[s][14].x,this.PL_joint[s][14].y,wing_color);
+            drawLine(this.PL_joint[s][15].x,this.PL_joint[s][15].y,this.PL_joint[s][14].x,this.PL_joint[s][14].y,wing_color);
+            drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][15].x,this.PL_joint[s][15].y,wing_color);
+            
+            drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][16].x,this.PL_joint[s][16].y,wing_color);
+            drawLine(this.PL_joint[s][16].x,this.PL_joint[s][16].y,this.PL_joint[s][17].x,this.PL_joint[s][17].y,wing_color);
+            drawLine(this.PL_joint[s][18].x,this.PL_joint[s][18].y,this.PL_joint[s][17].x,this.PL_joint[s][17].y,wing_color);
+            drawLine(this.PL_joint[s][18].x,this.PL_joint[s][18].y,this.PL_joint[s][19].x,this.PL_joint[s][19].y,wing_color);
+            drawLine(this.PL_joint[s][20].x,this.PL_joint[s][20].y,this.PL_joint[s][19].x,this.PL_joint[s][19].y,wing_color);
+            drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][20].x,this.PL_joint[s][20].y,wing_color);
+        }
         drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][2].x,this.PL_joint[s][2].y,body_color);
 
         if (this.PL_class_ID[s]!=Class_Dead){ // if stickman is not dead, draw (spine?)
