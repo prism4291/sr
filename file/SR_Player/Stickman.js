@@ -43,9 +43,14 @@ SR_Player.prototype.Stickman_pl = function(current_char){ // (new prototype)
     //*/
     for (var j=11; j<=20; j++){
         moveJoint(this.PL_joint[current_char][j],this.PL_joint_destination[current_char][j],0.05,0.95);
-
-
     }
+
+    this.PL_joint[current_char][11].x-=0.1;
+    this.PL_joint[current_char][11].y-=0.1;
+    this.PL_joint[current_char][12].x-=0.1;
+    this.PL_joint[current_char][12].y-=0.15;
+
+
     pullJoints(this.PL_joint[current_char][1] ,this.PL_joint[current_char][11],3.6,0  ,0.1); // neck to left wing (shoulder)
     pullJoints(this.PL_joint[current_char][11],this.PL_joint[current_char][12],9.6,0.5,0.5); // left wing (shoulder) to left wing (tip)
     pullJoints(this.PL_joint[current_char][12],this.PL_joint[current_char][13],9.6,0.5,0.5);
