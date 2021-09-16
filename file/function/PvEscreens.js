@@ -295,7 +295,7 @@ function PvEscreens(){ // original name: vf()
         for (var s=0; s<Stickmen_Slots; s++){
             xx = 166+60*s-Players.PL_joint[s][2].x;
             yy = 224-Players.PL_joint[s][2].y;
-            for (var j=0; j<21; j++){
+            for (var j=0; j<Players.PL_joint[s].length; j++){
                 Players.PL_joint[s][j].x += xx;
                 Players.PL_joint[s][j].y += yy;
             }
