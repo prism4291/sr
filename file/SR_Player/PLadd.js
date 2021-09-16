@@ -1,7 +1,7 @@
 SR_Player.prototype.PLadd = function(current_char,x_pos,y_pos){ // Pg.prototype.set
     x_pos <<= 3;
     y_pos <<= 3;
-    for (var j=0; j<PL_joint[current_char].length; j++){
+    for (var j=0; j<this.PL_joint[current_char].length; j++){
         assignVector2D(this.PL_joint[current_char][j],x_pos+random(4),y_pos+random(4));
         this.PL_joint_destination[current_char][j].Vset(this.PL_joint[current_char][j]);
     }
