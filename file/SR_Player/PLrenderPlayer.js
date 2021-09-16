@@ -65,7 +65,7 @@ SR_Player.prototype.PLrenderPlayer = function(){ // Pg.prototype.b
             drawLine(this.PL_joint[s][13].x,this.PL_joint[s][13].y,this.PL_joint[s][14].x,this.PL_joint[s][14].y,wing_color);
         }
         if (this.PL_class_ID[s]==0){ // if stickman is a stickman
-            wing_color = (weap_color&0xFF6666)>>17<<16|(weap_color&0x00FFFF)>>9<<8|(weap_color&0x0000FF)>>1;
+            wing_color = (weap_color&0xFF6666)>>17<<16|(weap_color&0x006666)>>9<<8|(weap_color&0x000066)>>1;
             drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][11].x,this.PL_joint[s][11].y,wing_color);
             drawLine(this.PL_joint[s][11].x,this.PL_joint[s][11].y,this.PL_joint[s][12].x,this.PL_joint[s][12].y,wing_color);
             drawLine(this.PL_joint[s][13].x,this.PL_joint[s][13].y,this.PL_joint[s][12].x,this.PL_joint[s][12].y,wing_color);
