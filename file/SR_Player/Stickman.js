@@ -41,6 +41,27 @@ SR_Player.prototype.Stickman_pl = function(current_char){ // (new prototype)
     pullJoints(this.PL_joint[current_char][8],this.PL_joint[current_char][10],0.1,0.5,0.5); // right knee to right foot
     pullJoints(this.PL_joint[current_char][7],this.PL_joint[current_char][8] ,6  ,0.1,0.1); // left knee to right knee
     //*/
+    for (var j=11; j<=20; j++){
+        moveJoint(this.PL_joint[current_char][j],this.PL_joint_destination[current_char][j],0.05,0.95);
+
+
+    }
+    pullJoints(this.PL_joint[current_char][1] ,this.PL_joint[current_char][11],3.6,0  ,0.1); // neck to left wing (shoulder)
+    pullJoints(this.PL_joint[current_char][11],this.PL_joint[current_char][12],9.6,0.5,0.5); // left wing (shoulder) to left wing (tip)
+    pullJoints(this.PL_joint[current_char][12],this.PL_joint[current_char][13],9.6,0.5,0.5);
+    pullJoints(this.PL_joint[current_char][13],this.PL_joint[current_char][14],9.6,0.5,0.5);
+    pullJoints(this.PL_joint[current_char][14],this.PL_joint[current_char][15],9.6,0.5,0.5);
+    pullJoints(this.PL_joint[current_char][1] ,this.PL_joint[current_char][15],12 ,0  ,0.1); // neck to left wing (tip)
+
+    pullJoints(this.PL_joint[current_char][1] ,this.PL_joint[current_char][16],3.6,0  ,0.1); // neck to right wing (shoulder)
+    pullJoints(this.PL_joint[current_char][16],this.PL_joint[current_char][17],9.6,0.5,0.5);
+    pullJoints(this.PL_joint[current_char][17],this.PL_joint[current_char][18],9.6,0.5,0.5);
+    pullJoints(this.PL_joint[current_char][18],this.PL_joint[current_char][19],9.6,0.5,0.5);
+    pullJoints(this.PL_joint[current_char][19],this.PL_joint[current_char][20],9.6,0.5,0.5);
+    pullJoints(this.PL_joint[current_char][1] ,this.PL_joint[current_char][20],12 ,0  ,0.1); // neck to right wing (tip)
+     // right wing (shoulder) to right wing (tip)
+
+
     pullJoints(this.PL_joint[current_char][0],this.PL_joint[current_char][1] ,3.6,0.5,0.5); // top of head to neck
     pullJoints(this.PL_joint[current_char][1],this.PL_joint[current_char][2] ,7.2,0.5,0.5); // neck to crotch
     pullJoints(this.PL_joint[current_char][1],this.PL_joint[current_char][3] ,9.6,0.5,0.5); // neck to left elbow
