@@ -65,20 +65,20 @@ SR_Player.prototype.PLrenderPlayer = function(){ // Pg.prototype.b
             drawLine(this.PL_joint[s][13].x,this.PL_joint[s][13].y,this.PL_joint[s][14].x,this.PL_joint[s][14].y,wing_color);
         }
         if (this.PL_class_ID[s]==0){ // if stickman is a stickman
-            wing_color = 255;
+            wing_color = 8355711;
             drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][11].x,this.PL_joint[s][11].y,wing_color);
             drawLine(this.PL_joint[s][11].x,this.PL_joint[s][11].y,this.PL_joint[s][12].x,this.PL_joint[s][12].y,wing_color);
             drawLine(this.PL_joint[s][13].x,this.PL_joint[s][13].y,this.PL_joint[s][12].x,this.PL_joint[s][12].y,wing_color);
             drawLine(this.PL_joint[s][13].x,this.PL_joint[s][13].y,this.PL_joint[s][14].x,this.PL_joint[s][14].y,wing_color);
             drawLine(this.PL_joint[s][15].x,this.PL_joint[s][15].y,this.PL_joint[s][14].x,this.PL_joint[s][14].y,wing_color);
-            drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][15].x,this.PL_joint[s][15].y,wing_color);
+            //drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][15].x,this.PL_joint[s][15].y,wing_color);
             
             drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][16].x,this.PL_joint[s][16].y,wing_color);
             drawLine(this.PL_joint[s][16].x,this.PL_joint[s][16].y,this.PL_joint[s][17].x,this.PL_joint[s][17].y,wing_color);
             drawLine(this.PL_joint[s][18].x,this.PL_joint[s][18].y,this.PL_joint[s][17].x,this.PL_joint[s][17].y,wing_color);
             drawLine(this.PL_joint[s][18].x,this.PL_joint[s][18].y,this.PL_joint[s][19].x,this.PL_joint[s][19].y,wing_color);
             drawLine(this.PL_joint[s][20].x,this.PL_joint[s][20].y,this.PL_joint[s][19].x,this.PL_joint[s][19].y,wing_color);
-            drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][20].x,this.PL_joint[s][20].y,wing_color);
+            //drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][20].x,this.PL_joint[s][20].y,wing_color);
         }
         drawLine(this.PL_joint[s][1].x,this.PL_joint[s][1].y,this.PL_joint[s][2].x,this.PL_joint[s][2].y,body_color);
 
