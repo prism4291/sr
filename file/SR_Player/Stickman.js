@@ -48,11 +48,11 @@ SR_Player.prototype.Stickman_pl = function(current_char){ // (new prototype)
     this.PL_joint[current_char][11].x-=0.1;
     this.PL_joint[current_char][11].y+=0.1;
     this.PL_joint[current_char][12].x-=0.1;
-    this.PL_joint[current_char][12].y-=0.15;
+    this.PL_joint[current_char][12].y-=0.2;
     this.PL_joint[current_char][13].x-=0.1;
-    this.PL_joint[current_char][13].y+=0.1;
+    this.PL_joint[current_char][13].y+=0.15;
     this.PL_joint[current_char][14].x-=0.1;
-    this.PL_joint[current_char][14].y-=0.15;
+    this.PL_joint[current_char][14].y-=0.3;
     this.PL_joint[current_char][15].x-=0.1;
     //this.PL_joint[current_char][15].y+=0.1;
 
