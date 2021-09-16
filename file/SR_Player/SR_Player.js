@@ -29,7 +29,7 @@ function SR_Player(){ // original name: Pg()
         this.PL_ring_thrown_status[s] = new Int32Array(6);
         this.PL_ring_distance_to_travel[s] = new Int32Array(6);
         this.PL_ring_ticks_until_active[s] = new Int32Array(6);
-        for (var j=0; j<this.PL_joint[s].length; j++){
+        for (var j=0; j<61; j++){
             this.PL_joint[s][j] = new Vector2D;
             this.PL_joint_destination[s][j] = new Vector2D;
         }
