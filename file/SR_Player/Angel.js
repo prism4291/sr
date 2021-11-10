@@ -6,6 +6,7 @@ SR_Player.prototype.Angel = function(current_char){
     var ang_ATin = AT_Min[current_char]; // set base stats
     var ang_ATax = AT_Max[current_char];
     var ang_AGI = Agi_Min[current_char]+randInt(Agi_Max[current_char]-Agi_Min[current_char]+1);
+ang_AGI =2;
     var ang_range = Range[current_char];
     var ang_Xpos = (this.PL_joint[current_char][9].x+this.PL_joint[current_char][10].x)>>1; // set position
     var ang_Ypos = (this.PL_joint[current_char][9].y+this.PL_joint[current_char][10].y)>>1;
@@ -16,7 +17,7 @@ SR_Player.prototype.Angel = function(current_char){
     else if (DEX[current_char]<60) ang_ring = 3;
     else if (DEX[current_char]<100) ang_ring = 4;
     else ang_ring = 5;
-    ang_ring = 4;
+    ang_ring = 6;
     if (checkEff(Stickmen_Slots+current_char,Card_Rings))
         ang_ring += 1; // angel Ring's Card
 
@@ -76,7 +77,7 @@ SR_Player.prototype.Angel = function(current_char){
     }
 
     for (var r=0; r<ang_ring; r++){
-        for(var rrr=0;rrr<5;rrr++){
+        
         if (this.PL_ring_thrown_status[current_char][r] != 0){  // if ring is not held
             this.PL_focus[current_char] = 15+r;                 // set focus point
             this.PL_ring_distance_to_travel[current_char][r]--; // move ring towards its target
@@ -135,7 +136,7 @@ SR_Player.prototype.Angel = function(current_char){
                     this.PL_ring_ticks_until_active[current_char][r] = getVal(Item_Inv[Stickmen_Slots+current_char],Ring_HBox_Rate);
                 }
             }
-        }}
+        }
     }
     pullJoints(this.PL_joint[current_char][0] ,this.PL_joint[current_char][1] ,3.6,0.5,0.5); // top of head to neck
     pullJoints(this.PL_joint[current_char][1] ,this.PL_joint[current_char][2] ,3.6,0.5,0.5); // neck to crotch
