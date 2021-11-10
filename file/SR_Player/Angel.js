@@ -102,11 +102,14 @@ SR_Player.prototype.Angel = function(current_char){
                 ang_splash = false; // angel splash damage
                 if (checkEff(Stickmen_Slots+current_char,Card_Explsn) && random(100)<getEff(Stickmen_Slots+current_char,Eff1)) ang_splash = true; // angel Explosion's Card
 
-                if (true||checkEff(Stickmen_Slots+current_char,Card_Critcl) && random(100)<getEff(Stickmen_Slots+current_char,Eff1)){ // angel Critical's Card
+                if (checkEff(Stickmen_Slots+current_char,Card_Critcl) && random(100)<getEff(Stickmen_Slots+current_char,Eff1)){ // angel Critical's Card
                     ang_ATin += floor(getEff(Stickmen_Slots+current_char,Eff2)*ang_ATin/100);
                     ang_ATax += floor(getEff(Stickmen_Slots+current_char,Eff2)*ang_ATax/100);
                     ang_is_critical = 1;
                 }
+                ang_ATin += floor(900*ang_ATin/100);
+                    ang_ATax += floor(900*ang_ATax/100);
+                    ang_is_critical = 1;
 
                 if (Game_Mode!=1) // detect if basic attack hits
                      ang_combatant = Enemies.ENtakeDamage(current_char,ang_splash,0,0,ang_ATin,ang_ATax,ang_is_critical,this.PL_joint[current_char][this.PL_focus[current_char]].x,this.PL_joint[current_char][this.PL_focus[current_char]].y,10,10);
