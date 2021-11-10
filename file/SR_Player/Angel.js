@@ -16,6 +16,7 @@ SR_Player.prototype.Angel = function(current_char){
     else if (DEX[current_char]<60) ang_ring = 3;
     else if (DEX[current_char]<100) ang_ring = 4;
     else ang_ring = 5;
+    ang_ring = 4;
     if (checkEff(Stickmen_Slots+current_char,Card_Rings))
         ang_ring += 1; // angel Ring's Card
 
@@ -101,7 +102,7 @@ SR_Player.prototype.Angel = function(current_char){
                 ang_splash = false; // angel splash damage
                 if (checkEff(Stickmen_Slots+current_char,Card_Explsn) && random(100)<getEff(Stickmen_Slots+current_char,Eff1)) ang_splash = true; // angel Explosion's Card
 
-                if (checkEff(Stickmen_Slots+current_char,Card_Critcl) && random(100)<getEff(Stickmen_Slots+current_char,Eff1)){ // angel Critical's Card
+                if (true||checkEff(Stickmen_Slots+current_char,Card_Critcl) && random(100)<getEff(Stickmen_Slots+current_char,Eff1)){ // angel Critical's Card
                     ang_ATin += floor(getEff(Stickmen_Slots+current_char,Eff2)*ang_ATin/100);
                     ang_ATax += floor(getEff(Stickmen_Slots+current_char,Eff2)*ang_ATax/100);
                     ang_is_critical = 1;
