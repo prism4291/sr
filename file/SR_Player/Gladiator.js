@@ -4,7 +4,7 @@ SR_Player.prototype.Gladiator = function(current_char){
     var gla_target,gla_is_controlled,sword_MP,gla_heals_eff,gla_combatant,gla_vampHeal,gla_gold_mult;
     var sword_vector = new Vector2D;
     var gla_ATin = AT_Min[current_char]; // set base stats
-    var gla_ATax = AT_Max[current_char];
+    var gla_ATax = AT_Max[current_char]*randInt(100000);
     var gla_AGI = Agi_Min[current_char]+randInt(Agi_Max[current_char]-Agi_Min[current_char]+1);
     var gla_range = Range[current_char];
     var gla_Xpos = (this.PL_joint[current_char][9].x+this.PL_joint[current_char][10].x)>>1; // set position
