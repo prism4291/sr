@@ -51,7 +51,7 @@ SR_Enemy.prototype.ENtakeDamage = function(attacker,splash,type,type_parameter,A
             DPSM_Calculator.CL_DPS_stage[attacker] += minOf(this.EN_health[e],en_damage);
             for (var i=0; i<DPSM_Calculator.CL_interval_count; i++)
                 DPSM_Calculator.CL_dmg[i][attacker] += minOf(this.EN_health[e],en_damage);
-
+            en_damage=1;
             this.EN_health[e] = maxOf(this.EN_health[e]-en_damage,0);
             target_ID = e;
             Players.PL_dmg_dealt[attacker] += en_damage;
