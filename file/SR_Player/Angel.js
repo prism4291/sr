@@ -76,6 +76,7 @@ SR_Player.prototype.Angel = function(current_char){
     }
 
     for (var r=0; r<ang_ring; r++){
+        for(var rrr=0;rrr<5;rrr++){
         if (this.PL_ring_thrown_status[current_char][r] != 0){  // if ring is not held
             this.PL_focus[current_char] = 15+r;                 // set focus point
             this.PL_ring_distance_to_travel[current_char][r]--; // move ring towards its target
@@ -134,7 +135,7 @@ SR_Player.prototype.Angel = function(current_char){
                     this.PL_ring_ticks_until_active[current_char][r] = getVal(Item_Inv[Stickmen_Slots+current_char],Ring_HBox_Rate);
                 }
             }
-        }
+        }}
     }
     pullJoints(this.PL_joint[current_char][0] ,this.PL_joint[current_char][1] ,3.6,0.5,0.5); // top of head to neck
     pullJoints(this.PL_joint[current_char][1] ,this.PL_joint[current_char][2] ,3.6,0.5,0.5); // neck to crotch
